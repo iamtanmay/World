@@ -1,5 +1,0 @@
-/mnt/57E4D0210746B07E/AI/LLMTestRPG/World/WorldSim-CS/Core/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/mnt/57E4D0210746B07E/AI/LLMTestRPG/World/WorldSim-CS/Core/bin/Debug/Core.dll.mdb
-/mnt/57E4D0210746B07E/AI/LLMTestRPG/World/WorldSim-CS/Core/bin/Debug/Core.dll
-/mnt/57E4D0210746B07E/AI/LLMTestRPG/World/WorldSim-CS/Core/obj/Debug/Core.dll
-/mnt/57E4D0210746B07E/AI/LLMTestRPG/World/WorldSim-CS/Core/obj/Debug/Core.dll.mdb
