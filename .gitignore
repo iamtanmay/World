@@ -1,0 +1,10 @@
+*.exe
+*.obj
+*.pdb
+*.fuse*
+WorldSim-CS/Core/bin
+WorldSim-CS/Core/obj
+WorldSim-CS/Core/properties
+WorldSim-CS/CoreTest/bin
+WorldSim-CS/CoreTest/obj
+WorldSim-CS/CoreTest/properties
