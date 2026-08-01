@@ -1,0 +1,23 @@
+@startuml
+class Sim {
+    - <<readonly>> _maxPlayers : int
+    - <<readonly>> _players : Dictionary<int, PlayerState>
+    - <<readonly>> _systems : List<ISystem>
+    - <<readonly>> _pendingInputs : Queue<PlayerInputFrame>
+    - <<readonly>> _collectedInputs : Dictionary<int, PlayerInputFrame>
+    - _currentTick : int
+    - <<readonly>> _lock : object
+    + Sim(maxPlayers:int)
+    + RegisterSystem(system:ISystem) : void
+    + SubmitInput(frame:PlayerInputFrame) : void
+    + ProcessTick() : void
+    - CollectPlayerActions(tick:int) : List<PlayerAction>
+    - ExecuteSystems(actions:List<PlayerAction>) : void
+    + CurrentTick : int <<get>>
+    + AddEntity(entity:Entity) : void
+    + RemoveEntity(entityId:int) : void
+}
+class Game <<static>> {
+    + {static} CreateSim(maxPlayers:int, entityCount:int) : Sim
+}
+@enduml

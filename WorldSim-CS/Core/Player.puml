@@ -1,0 +1,28 @@
+@startuml
+enum PlayerId {
+}
+enum ActionType {
+    None,
+    Move,
+    Attack,
+    Trade,
+    Wait,
+}
+struct PlayerAction {
+    + PlayerId : PlayerId
+    + Type : ActionType
+    + Target : Vector2
+    + EntityId : int
+    + {static} NoneAction : PlayerAction
+}
+class PlayerState {
+    + Id : PlayerId <<get>>
+    + EntityIds : List<int> <<get>>
+    + PlayerState(id:PlayerId)
+}
+struct PlayerInputFrame {
+    + Tick : int
+    + Actions : List<PlayerAction>
+    + PlayerInputFrame(tick:int)
+}
+@enduml

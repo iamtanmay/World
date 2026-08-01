@@ -1,0 +1,29 @@
+﻿<Properties StartupItem="CoreTest/CoreTest.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CoreTest/Program.cs">
+    <Files>
+      <File FileName="Core/Sim.cs" Line="28" Column="47" />
+      <File FileName="Core/Player.cs" Line="39" Column="2" />
+      <File FileName="Core/Entity.cs" Line="67" Column="4" />
+      <File FileName="CoreTest/Program.cs" Line="55" Column="45" />
+      <File FileName="Core/UtilityTypes.cs" Line="6" Column="2" />
+      <File FileName="Core/System.cs" Line="79" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WorldSim-CS" expanded="True">
+            <Node name="Core" expanded="True" />
+            <Node name="CoreTest" expanded="True">
+              <Node name="References" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

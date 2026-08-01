@@ -1,0 +1,23 @@
+@startuml
+interface ISystem {
+    Initialize() : void
+    Update(entities:Entity[], actions:List<PlayerAction>) : void
+}
+class MovementSystem {
+    - _entities : Entity[]
+    + Initialize() : void
+    + Update(entities:Entity[], actions:List<PlayerAction>) : void
+}
+class CombatSystem {
+    + Initialize() : void
+    + Update(entities:Entity[], actions:List<PlayerAction>) : void
+    - Distance(a:Vector2, b:Vector2) : long
+}
+class StateUpdateSystem {
+    + Initialize() : void
+    + Update(entities:Entity[], actions:List<PlayerAction>) : void
+}
+ISystem <|-- MovementSystem
+ISystem <|-- CombatSystem
+ISystem <|-- StateUpdateSystem
+@enduml

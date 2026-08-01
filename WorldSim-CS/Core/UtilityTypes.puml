@@ -1,0 +1,27 @@
+@startuml
+class FixedPoint <<static>> {
+    + <<const>> FractionBits : int = 16
+    + <<const>> One : long
+    + {static} FromInt(value:int) : long
+    + {static} FromFloat(value:float) : long
+    + {static} FromFloat(value:double) : long
+    + {static} ToInt(value:long) : int
+    + {static} ToFloat(value:long) : float
+    + {static} Add(a:long, b:long) : long
+    + {static} Subtract(a:long, b:long) : long
+    + {static} Multiply(a:long, b:long) : long
+    + {static} Divide(a:long, b:long) : long
+    + {static} Sqrt(x:long) : long
+}
+struct Vector2 {
+    + X : long
+    + Y : long
+    + Vector2(x:long, y:long)
+    + {static} Zero : Vector2
+    + {static} UnitX : Vector2
+    + {static} UnitY : Vector2
+    + Add(other:Vector2) : Vector2
+    + Subtract(other:Vector2) : Vector2
+    + Multiply(scalar:long) : Vector2
+}
+@enduml

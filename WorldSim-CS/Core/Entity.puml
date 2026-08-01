@@ -1,0 +1,26 @@
+@startuml
+class EntityManager {
+    - {static} <<readonly>> _instance : EntityManager
+    + {static} Instance : EntityManager <<get>>
+    - <<readonly>> _entities : Dictionary<int, Entity>
+    - <<readonly>> _entityIds : List<int>
+    - <<readonly>> _removedIds : HashSet<int>
+    - _nextEntityId : int
+    - EntityManager()
+    + CreateEntity() : int
+    + AddEntity(entity:Entity) : void
+    + RemoveEntity(entityId:int) : void
+    + GetEntitiesSortedById() : Entity[]
+    + GetEntity(id:int) : Entity
+    + Clear() : void
+}
+class Entity {
+    + Id : int <<get>>
+    + Position : Vector2 <<get>> <<set>>
+    + Velocity : Vector2 <<get>> <<set>>
+    + Health : int <<get>> <<set>>
+    + OwnerPlayerId : int <<get>> <<set>>
+    + IsAlive : bool <<get>>
+    + Entity(id:int)
+}
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+!include ..Entity.puml
+!include ..Player.puml
+!include ..Sim.puml
+!include ..System.puml
+!include ..UtilityTypes.puml
+!include .Properties/AssemblyInfo.puml
+!include .obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.puml
+@enduml
